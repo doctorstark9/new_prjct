@@ -112,9 +112,7 @@ git remote add origin https://github.com/username/weather-app.git
 This tells Git that your remote repository is called origin.
 
 3. Rename Your Local Branch (Optional but Recommended)
-bash
-Copy
-Edit
+
 git branch -M main
 This sets your current branch to main (GitHub default).
 
@@ -154,9 +152,7 @@ Generally used after git commit.
 Steps to Push Code
 Add remote repository:
 
-bash
-Copy
-Edit
+
 git remote add origin <repo_url>
 Rename the default branch (if needed):
 
