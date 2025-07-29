@@ -38,22 +38,16 @@ Scenario:
 You are starting a new project called weather-app. You want to use Git to track its changes.
 
 Step 1: Create the Project Folder
-bash
-Copy
-Edit
+
 mkdir weather-app        # Create a new folder
 cd weather-app           # Move into the folder
 Step 2: Initialize Git
-bash
-Copy
-Edit
+
 git init                 # Initialize an empty git repository
 This creates a hidden .git folder that will store all version history.
 
 Step 3: Configure Your Name & Email (One-Time Setup)
-bash
-Copy
-Edit
+
 git config --global user.name "John Doe"
 git config --global user.email "johndoe@example.com"
 These details will appear in your commit history.
@@ -61,9 +55,7 @@ These details will appear in your commit history.
 Step 4: Add a File
 Create a new file (for example, app.py):
 
-bash
-Copy
-Edit
+
 echo "print('Hello Weather!')" > app.py
 Check the status:
 
@@ -71,36 +63,26 @@ git status
 You’ll see app.py listed as Untracked (not yet staged).
 
 Step 5: Stage the File
-bash
-Copy
-Edit
+
 git add app.py
 Now, app.py is in the staging area, ready to be committed.
 
 Step 6: Commit the File
-bash
-Copy
-Edit
+
 git commit -m "Initial commit: Added app.py"
 This saves a snapshot of app.py in the repository history.
 
 Step 7: Check History
-bash
-Copy
-Edit
+
 git log --oneline
 You’ll see something like:
 
-sql
-Copy
-Edit
+
 a1b2c3d Initial commit: Added app.py
 Final Flow
 The full sequence of commands is:
 
-bash
-Copy
-Edit
+
 mkdir weather-app
 cd weather-app
 git init
@@ -125,9 +107,7 @@ DO NOT initialize with README, .gitignore, etc. (since you already have a local 
 Copy the repository URL (e.g., https://github.com/username/weather-app.git).
 
 2. Add the Remote URL to Your Local Repo
-bash
-Copy
-Edit
+
 git remote add origin https://github.com/username/weather-app.git
 This tells Git that your remote repository is called origin.
 
@@ -139,9 +119,7 @@ git branch -M main
 This sets your current branch to main (GitHub default).
 
 4. Push Your Code to GitHub
-bash
-Copy
-Edit
+
 git push -u origin main
 -u sets the default remote tracking branch, so future pushes can simply use git push.
 
@@ -182,26 +160,18 @@ Edit
 git remote add origin <repo_url>
 Rename the default branch (if needed):
 
-bash
-Copy
-Edit
+
 git branch -M main
 Push code for the first time:
 
-bash
-Copy
-Edit
+
 git push -u origin main
 After the first push, you can just use:
 
-bash
-Copy
-Edit
+
 git push
 Example:
-bash
-Copy
-Edit
+
 # Start with local repo
 git init
 git add .
@@ -216,9 +186,7 @@ What is git pull?
 git pull is used to download new commits from the remote repository and merge them into your current branch.
 
 Steps to Pull Changes
-bash
-Copy
-Edit
+
 git pull origin main
 origin – name of the remote repository.
 
@@ -229,9 +197,7 @@ Scenario:
 You cloned weather-app earlier, but your teammate pushed new updates.
 To update your local repo:
 
-bash
-Copy
-Edit
+
 git pull origin main
 Now your local repository will have the latest files (e.g., forecast.py added by your teammate).
 
@@ -413,34 +379,22 @@ A new branch allows you to try new things safely.
 
 Creating and Switching Branches
 Step 1: See all branches
-bash
-Copy
-Edit
+
 git branch -a
 Output:
 
-css
-Copy
-Edit
 * main
 The * indicates you’re currently on main.
 
 Step 2: Create a new branch
-bash
-Copy
-Edit
+t
 git branch sprint1
 Now you have:
 
-css
-Copy
-Edit
 main
 sprint1
 Step 3: Switch to the new branch
-bash
-Copy
-Edit
+
 git checkout sprint1
 # OR (new way)
 git switch sprint1
@@ -448,15 +402,11 @@ You are now on sprint1.
 Any new commits will only affect this branch, not main.
 
 Step 4: Verify current branch
-bash
-Copy
-Edit
+
 git branch
 Output:
 
-css
-Copy
-Edit
+
 main
 * sprint1
 Step 5: Why Use Branches?
@@ -468,47 +418,35 @@ If something breaks in sprint1, main stays safe and unaffected.
 
 Merging Branches
 1. Switch to main
-bash
-Copy
-Edit
+
 git switch main
 Merging always happens into the branch you are on.
 
 2. Update main
-bash
-Copy
-Edit
+
 git pull origin main
 Ensures your local main is up-to-date with GitHub.
 
 3. Merge your branch
-bash
-Copy
-Edit
+
 git merge sprint1
 Applies all commits from sprint1 into main.
 
 If there are no conflicts, the merge happens automatically.
 
 4. Push updated main to remote
-bash
-Copy
-Edit
+
 git push origin main
 This updates main on GitHub with the merged changes.
 
 Quick Summary
 Create a branch:
 
-bash
-Copy
-Edit
+
 git switch -c sprint1
 Merge into main:
 
-bash
-Copy
-Edit
+
 git switch main
 git merge sprint1
 git push origin main
