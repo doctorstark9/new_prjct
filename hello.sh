@@ -1,3 +1,3 @@
 #!/bin/bash
 skills="devops"
-echo "Hello Suraj $skills "
+echo "Hello Suraj $sills "
