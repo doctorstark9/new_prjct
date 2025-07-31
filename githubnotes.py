@@ -1,16 +1,3 @@
-git config --global user.name "doctorstark9"
-
-git config --global user.email "doctorstark9@gmail.com"
-doctorstark9@gmail.com
-
-
-https://github.com/doctorstark9/new_prjct.git  
-
-
-
-git remote add origin https://github.com/doctorstark9/new_prjct.git
-
-
 Git
 Definition:
 Git is a local version control system that runs on your computer.

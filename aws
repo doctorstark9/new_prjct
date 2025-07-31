@@ -1,0 +1,108 @@
+✅ AWS Syllabus for DevOps Beginners (2025 Edition)
+Here’s a step-by-step learning path:
+
+🟢 Phase 1: AWS Fundamentals (Cloud Basics)
+Learn the core building blocks of AWS
+
+Topics	Purpose
+What is Cloud Computing?	Basics of IaaS, PaaS, SaaS
+AWS Global Infrastructure	Region, Availability Zone, Edge Location
+AWS Free Tier Setup	Practice account creation and billing alert setup
+
+🔵 Phase 2: Core AWS Services
+These are must-know for every DevOps engineer.
+
+✅ Compute
+EC2 (Launch, SSH access, key pairs, AMI, security groups)
+
+Auto Scaling (launch config, policies)
+
+Elastic Load Balancer (ELB)
+
+✅ Storage
+S3 (buckets, versioning, lifecycle rules, static hosting)
+
+EBS (volume types, snapshots)
+
+EFS (shared storage across EC2)
+
+✅ Networking
+VPC (subnets, route tables, NAT, IGW)
+
+Security Groups vs NACLs
+
+Elastic IPs, Public vs Private IP
+
+Route 53 (DNS basics, record types)
+
+✅ Databases
+RDS (MySQL/PostgreSQL)
+
+DynamoDB (NoSQL basics)
+
+🟣 Phase 3: DevOps & Automation Tools on AWS
+These help you automate deployments, infrastructure, and CI/CD.
+
+✅ Infrastructure as Code (IaC)
+CloudFormation (templates, stacks)
+
+Terraform (often used instead of CloudFormation)
+
+✅ CI/CD
+CodeCommit (Git repo)
+
+CodeBuild (build server)
+
+CodePipeline (CI/CD pipeline)
+
+CodeDeploy (deployment to EC2/ASG)
+
+✅ Containers & Serverless
+ECS / Fargate (for running containers)
+
+Lambda (serverless functions)
+
+API Gateway (for exposing Lambdas)
+
+🟠 Phase 4: Monitoring & Security
+These are key in real-world operations and troubleshooting.
+
+✅ Monitoring
+CloudWatch (logs, metrics, dashboards, alarms)
+
+CloudTrail (audit AWS API calls)
+
+✅ IAM (Identity & Access Management)
+Users, groups, policies, roles
+
+MFA, least privilege, trust relationships
+
+💡 Real-World DevOps Use Cases on AWS
+Auto-deploy app using CodePipeline → CodeBuild → ECS
+
+Monitor EC2 memory/disk with CloudWatch Agent
+
+Spin up infra with Terraform or CloudFormation
+
+Store logs/backups in S3 with lifecycle rules
+
+🧠 AWS DevOps Interview Topics (Beginner to Mid-Level)
+Area	Questions
+EC2	How to launch EC2, troubleshoot SSH, set up auto-scaling
+S3	Public access, versioning, bucket policy, static hosting
+IAM	Difference between user, role, group; inline vs managed policy
+VPC	Private/public subnet setup, NAT vs IGW
+CI/CD	Explain CodePipeline workflow, integrating with GitHub
+CloudWatch	Create alarm for high CPU, log insights
+Lambda	Real use case, cold start, timeout issues
+ECS vs EKS	Basic comparison, when to use which
+Terraform vs CloudFormation	Syntax, lifecycle, use-case difference
+
+🗂️ Bonus Resources to Practice
+AWS Free Tier: Practice with real resources
+
+AWS Cloud Quest (Beginner DevOps): AWS-provided gamified learning
+
+Use AWS CLI to manage resources via terminal (essential skill)
+
+
